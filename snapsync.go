@@ -98,7 +98,7 @@ func main() {
 	log.Info("Removed files: ", removed)
 
 	// Exit if delete threashold not met
-	if removed <= config.DeleteThreashold {
+	if removed <= config.DeleteThreashold || config.DeleteThreashold == 0 {
 		log.Info("Removed files ", removed, " meets threshold of ", config.DeleteThreashold, " continuing to sync.")
 	} else {
 		log.Info("Removed files ", removed, " does not meet threshold of ", config.DeleteThreashold, " not running sync.")
