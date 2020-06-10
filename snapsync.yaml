@@ -1,0 +1,32 @@
+# Base Settings
+Executable: "/usr/local/bin/snapraid"
+
+# Log Settings
+LogFile: "/var/log/snapsync.log"
+
+# Touch Settings
+TouchEnabled: true
+
+# Threashold Settings
+DeleteThreashold: 500
+
+# Scrub Settings
+ScrubEnabled: true
+ScrubPercentage: 10
+ScrubOlderThan: 10
+ScrubDaysOfWeek:
+  - Sunday
+  - Monday
+  - Tuesday
+  - Wednesday
+  - Thursday
+  - Friday
+  - Saturday
+
+# Status Settings
+OutputStatus: true
+
+# Pushover Settings
+PushoverEnabled: false
+PushoverAppKey: ""
+PushoverUserKey: ""
