@@ -56,3 +56,9 @@ Older-Than Option:
 >older-than option to define how old the block should be. The oldest blocks are scrubbed first ensuring an optimal check.
 
 For example, with the current defaults in the example config file, scrub is run every day. 10% of the array is scrubbed each day, and only scrubs blocks that have not been scrubbed in the last 10 days. So every bit of data is checked at least once every 10 days.
+
+## Pushover Example:
+
+Bellow is an example of the messages received on pushover from a recent run of snapsync with settings matching the default example config (with pushover enabled):
+
+![pushover example](https://github.com/JeordyR/SnapSync/blob/master/.github/images/pushover-example.jpg?raw=true)

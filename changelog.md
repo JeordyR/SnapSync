@@ -1,12 +1,20 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.0.3
+### Added
+- Added DeleteThreshold of 0 counting as unlimited
+
+### Changed
+
+
 ## 0.0.2
 ### Added
 
 ### Changed
 - Removed unnecessary new-lines from from logs
 - Added ForceTimestamp on logger
+
 
 ## 0.0.1
 ### Added
