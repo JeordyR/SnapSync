@@ -51,10 +51,13 @@ func main() {
 	defer file.Close()
 
 	log.SetOutput(file)
+	log.SetFormatter(&logrus.TextFormatter{
+		FullTimestamp: true,
+	})
 
 	// Send Pushover notification that sync starting
 	sendPushoverMessage("Beginning snapsync...")
-	log.Info("\n\n============= New Snapsync Execution =============")
+	log.Info("============= New Snapsync Execution =============")
 
 	// Run touch if enabled
 	if config.TouchEnabled == true {
@@ -372,7 +375,6 @@ func sendPushoverMessage(message string, messageArgs ...string) {
 	if config.PushoverEnabled == false {
 		return
 	}
-	log.Info("Sending pushover notification...")
 
 	// Setup Pushover client and objects
 	app := pushover.New(config.PushoverAppKey)
@@ -383,7 +385,7 @@ func sendPushoverMessage(message string, messageArgs ...string) {
 		message = message + v
 	}
 
-	log.Info("Message: ", message)
+	log.Info("Sending pushover notification, message: ", message)
 	msg := pushover.NewMessage(message)
 
 	// Send the message
