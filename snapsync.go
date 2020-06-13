@@ -16,7 +16,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-const version = "0.0.3"
+const version = "1.0.0"
 
 var config snapsyncConfig
 var log = logrus.New()
