@@ -61,4 +61,4 @@ For example, with the current defaults in the example config file, scrub is run 
 
 Bellow is an example of the messages received on pushover from a recent run of snapsync with settings matching the default example config (with pushover enabled):
 
-![pushover example](https://github.com/JeordyR/SnapSync/blob/master/.github/images/pushover-example.jpg?raw=true)
+<img src="https://github.com/JeordyR/SnapSync/blob/master/.github/images/pushover-example.jpg" alt="pushover example" width="300"/>
